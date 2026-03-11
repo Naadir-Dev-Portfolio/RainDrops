@@ -787,30 +787,6 @@ While the project itself is a simple brain-training game, it highlights my skill
       animateParticles();
     });
 
-    // Animate SVG waves for background motion
-    function animateWaves() {
-      const t = Date.now() / 1200;
-      const wave1 = document.getElementById('wave1');
-      const wave2 = document.getElementById('wave2');
-      // Animate the Q control points for a gentle wave
-      wave1.setAttribute('d',
-        `M0,800 Q${360 + 40*Math.sin(t)},${700 + 20*Math.cos(t/2)} ` +
-        `${720 + 40*Math.cos(t/2)},${800 + 20*Math.sin(t)} ` +
-        `T1440,800 V900 H0Z`
-      );
-      wave2.setAttribute('d',
-        `M0,850 Q${360 + 60*Math.cos(t/1.5)},${750 + 30*Math.sin(t/2)} ` +
-        `${720 + 60*Math.sin(t/2)},${850 + 30*Math.cos(t/1.5)} ` +
-        `T1440,850 V900 H0Z`
-      );
-      requestAnimationFrame(animateWaves);
-    }
-    document.addEventListener("DOMContentLoaded", () => {
-      animateWaves();
-      // ... existing DOMContentLoaded code ...
-    });
-
-    // start
     init();
   </script>
 </body>
