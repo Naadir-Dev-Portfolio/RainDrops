@@ -1,4 +1,6 @@
-# Arithmetic Rain Game
+# Rain Drops
+
+Arithmetic Brain training excercise by Naadir.
 
 A responsive, browser-based educational game where arithmetic problems fall like raindrops and players "catch" them by selecting the correct answer before they reach the bottom.
 
